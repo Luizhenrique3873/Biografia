@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Nunito:ital,wght@0,300;0,400;1,300&family=Oswald:wght@500&display=swap');
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            /* background-image: linear-gradient(to bottom, orange, rgb(66, 140, 175)); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;*/
+            background-color: white;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        #caixa{
+            width: 100%;
+            height: auto;
+            background-color: rgb(223, 223, 223);
+        }
+        img{
+            width: 400px;
+        }
+        .texto{
+            padding: 50px;
+            display: flex;
+            align-items: center;
+        }
+        p{
+            width: 800px;
+            text-align: justify;
+            margin: 40px;
+        }
+
+    @media screen and (max-width: 900px) {
+        .texto{
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            width: auto;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div id="caixa">
+
+        <div class="texto">
+            <img src="paulEbill.jpg"></img>
+            <p>
+                Paul Allen, cujo nome completo era Paul Gardner Allen, nasceu em 21 de janeiro de 1953, na cidade de Seattle, no estado de Washington,
+                nos Estados Unidos. Ele ficou conhecido como um empresário, investidor e filantropo, sendo um dos co-fundadores da Microsoft, junto com Bill Gates.
+            </p>
+        </div>
+        <hr>
+
+        <div class="texto">
+            <p>Durante seus anos escolares em Seattle, Allen teve a oportunidade de conhecer Bill Gates. Compartilhando um interesse mútuo por computadores e programação, os dois começaram a colaborar. Em 1975, ao se deparar com um artigo na revista Popular Electronics sobre o Altair 8800, um dos primeiros computadores pessoais. Allen compartilhou a ideia com Gates de desenvolver um software para essa plataforma. Essa colaboração levou à criação da linguagem de programação BASIC para o Altair 8800.
+            </p>
+            <img src="Altair_8800.jpg" alt=""></img>
+        </div>
+        <hr>
+
+        <div class="texto">
+            <img src="Vulcan-logo.jpeg"></img>
+            <p>Allen desempenhou um papel crucial nos estágios iniciais da Microsoft, sendo fundamental no desenvolvimento de produtos-chave e na negociação de um acordo com a IBM para fornecer um sistema operacional para seus computadores pessoais, o que resultou na criação do MS-DOS. No entanto, em 1983, Allen recebeu o diagnóstico de linfoma de Hodgkin, um tipo de câncer. Esse evento o levou a deixar suas responsabilidades diárias na Microsoft, focando em sua saúde. Após se recuperar, embora não tenha mais se envolvido diretamente na gestão da empresa, permaneceu como acionista e desempenhou um papel significativo como investidor e filantropo.</p>
+            
+        </div>
+
+    </div>
+    
+    <script src="iframeResizer.contentWindow.min.js"></script>
+</body>
+</html>
