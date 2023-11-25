@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Nunito:ital,wght@0,300;0,400;1,300&family=Oswald:wght@500&display=swap');
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        main{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        
+        #caixa{
+            animation-name: subida;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            width: 600px;
+            height: 250px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Nunito', sans-serif;
+        }
+        #corazul{
+            float: right;
+            width: 200px;
+            height: 100%;
+            background-color: rgb(0, 191, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            position: absolute;
+            width: 295px;
+        }
+        #caixa > #corazul > img{
+            animation-name: tamanho;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+        #caixa > #texto{
+            padding: 30px;
+            width: fit-content;
+            text-align: justify;
+        }
+        @keyframes subida {
+            from{
+                opacity: 0;
+                margin-bottom: -100px;
+            }
+            to{
+                opacity: 1;
+                margin-bottom: 0;
+            }
+        }
+        @keyframes tamanho {
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main>
+        <div id="caixa">
+            <div id="texto">
+                Nossa missão na Bigrafia Tudo Sobre é Capacitarmos indivíduos a conhecer histórias de vida de maneira autêntica, preservando legados para as gerações futuras. Nossa visão de longo prazo é imaginar um mundo onde cada história é valorizada, preservada e transmitida, contribuindo para um entendimento mais profundo e significativo entre as pessoas, e trabalhamos diariamente para alcançá-la. Junte-se a nós enquanto continuamos a moldar o futuro.
+            </div>
+            <div id="corazul"><img src="livro.png" alt=""></div>
+            
+        </div>
+    </main>
+
+    <script src="iframeResizer.contentWindow.min.js"></script>
+</body>
+</html>

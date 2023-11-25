@@ -15,6 +15,9 @@
 #menu:hover{
     background-color: rgb(142, 142, 142);
 }
+#menu:active{
+    background-color: rgb(142, 142, 142);
+}
 
 .esconder {
     display: none;
@@ -96,7 +99,6 @@ img {
 footer {
     background-color: rgba(45, 45, 45, 0.756);
     height: 250px;
-    width: 100%;
     padding-top: 5px;
     font-family: 'Nunito', sans-serif;
 }
