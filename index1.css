@@ -51,12 +51,13 @@
 }
 
 .mostrar > a:hover {
-    background-color: rgb(87, 87, 173);
+    background-color: #6CB2Eb;
     cursor: pointer;
 }
 
 header {
-    background-color: white;
+    /* background-color: #49789E; */
+    background-color: #5B97C7;
     height: auto;
     box-shadow: 0 0 10px black;
 }
@@ -76,6 +77,7 @@ img {
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    color: white;
 }
 
 #header > a {
@@ -92,12 +94,12 @@ img {
 }
 
 #header > a:hover {
-    background-color: rgb(91, 91, 165);
+    background-color: #6CB2Eb;
     cursor: pointer;
 }
 
 footer {
-    background-color: rgba(45, 45, 45, 0.756);
+    background-color: #5B97C7;
     height: 250px;
     padding-top: 5px;
     font-family: 'Nunito', sans-serif;
@@ -105,7 +107,8 @@ footer {
 footer > p{
     margin: auto;
     width: 100px;
-    background-color: deepskyblue;
+    background-color: #6CB2Eb;
+    color: white;
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
@@ -118,9 +121,10 @@ footer > p{
     flex-direction: column;
     margin: auto;
     width: fit-content;
+    color: white;
 }
 #linhal{
-    background-color: deepskyblue;
+    background-color: #6CB2Eb;
     width: 4px;
     height: 140px;
     margin-bottom: -150px;
@@ -128,7 +132,8 @@ footer > p{
 }
 #icones{
     border-radius: 50%;
-    background-color: deepskyblue;
+    background-color: #6CB2Eb;
+    color: white;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 6px;
@@ -137,6 +142,8 @@ footer > p{
 #meuIframe {
     min-width: 100%;
     border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @keyframes opacidade {
