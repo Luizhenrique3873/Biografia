@@ -16,13 +16,16 @@
             background-color: antiquewhite;
         }
         main{
-            height: 500px;
             display: flex;
             align-items: center;
-            justify-content: center; 
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+            padding-bottom: 20px;
         }
         
         #caixa{
+            margin-top: 100px;
             animation-name: subida;
             animation-duration: 0.8s;
             animation-timing-function: ease-in-out;
@@ -45,7 +48,7 @@
             justify-content: center;
             align-items: center;
         }
-        img{
+        #corazul > img{
             position: absolute;
             width: 295px;
         }
@@ -60,14 +63,44 @@
             width: fit-content;
             text-align: justify;
         }
+        #foto{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+            border-radius: 10px;
+            height: 300px;
+            animation-name: foto;
+            animation-duration: 0.9s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            overflow: hidden;
+        }
+        #foto > img{
+            width: 400px;
+        }
+        #titulofoto{
+            text-align: center;
+            background-color: #6CB2Eb;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.503);
+        }
         @keyframes subida {
             from{
                 opacity: 0;
-                margin-bottom: -100px;
+                margin-top: -100px;
             }
             to{
                 opacity: 1;
-                margin-bottom: 0;
+                margin-top: 100px;
+            }
+        }
+        @keyframes foto {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
             }
         }
         @keyframes tamanho {
@@ -80,7 +113,7 @@
         }
         @media  screen and (max-width: 900px) {
             main{
-            height: 600px;
+            
             display: flex;
             align-items: center;
             justify-content: center; 
@@ -91,6 +124,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            margin-bottom: 40px;
             }
             #corazul{
             float: none;
@@ -114,6 +148,12 @@
             </div>
             <div id="corazul"><img src="livro.png" alt=""></div>
             
+        </div>
+        <hr>
+        <div><p id="titulofoto">PARTICIPANTES</p></div>
+        
+        <div id="foto">
+            <img src="nois.jpg" alt="">
         </div>
     </main>
 
