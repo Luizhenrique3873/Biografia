@@ -62,8 +62,8 @@ header {
     box-shadow: 0 0 10px black;
 }
 
-img {
-    width: 190px;
+#header > img {
+    width: 300px;
     user-select: none;
 }
 
